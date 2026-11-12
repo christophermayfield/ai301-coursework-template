@@ -1,4 +1,4 @@
-# Contribution: [Issue Title]
+# Contribution: Add support for OPTICAL_FLOW_RAD
 
 Path: `beat-2-contribution/contribution-story.md`
 
@@ -7,12 +7,11 @@ the repository is not read. **Keep every section header below under its exact na
 format criteria grade exactly that. Your course repo link is the whole submission: no tool
 files and no evidence uploads are part of Assignment 5.
 
-**Contribution Number:** [1]
-**Student:** [Student name]
-**GitHub Username:** [your GitHub username, exactly as it appears on your profile - no @, no
-profile URL. Your comments upstream are identified by this name.]
-**Issue:** [GitHub issue link]
-**Pull Request:** [GitHub PR link, once opened]
+**Contribution Number:** 1
+**Student:** Christopher Mayfield
+**GitHub Username:** christophermayfield
+**Issue:** https://github.com/ArduPilot/ardupilot/issues/31588
+**Pull Request:** [not yet opened]
 
 One repository, built across units 5 to 8, telling the whole story of your real
 contribution. Fill it as you work, not at the end — the sections below ask for evidence that
@@ -55,16 +54,13 @@ happened; these entries are the toolkit's own timeline.
 All four entries are graded. Keep every heading below, and fill each
 one in the week it belongs to.
 
-**Unit 5: [one line on the tool work]**
+**Unit 5: Installed issue-scout, wrote a three-query Python search strategy, ran a full wild scan, and graded candidate issues including my chosen one**
 
-[2-4 sentences: what you built (the scout, your strategy), what broke
-or fell short, what changed because of it.]
+I installed the issue-scout skill from the unit 5 starter, carried my fit profile forward, and wrote a search strategy with three `gh search issues` queries targeting Python good-first-issue bugs and documentation issues. The full scan returned 220 survivors from 260 unique results after dropping assigned and stale issues; all five graded candidates came back accept. I then graded two hand-picked issues from the Issue Selection site: refined-saved-replies#2 rejected on unclaimed (open linked PR) and ardupilot#31588 also rejected on unclaimed (open linked PR #31601) and outside my Python fit profile. I chose ardupilot#31588 anyway — it is a real actively-maintained project with an engaged maintainer and a clearly scoped feature request. The rubric's unclaimed check correctly caught both open PRs; nothing needed patching there.
 
-**Unit 6: [one line on the tool work]**
+**Unit 6: Installed voice guard; wrote CLAUDE.local.md for the pathreview repo; patched scope check**
 
-[2-4 sentences: the voice-guard, the repo-memory file. What broke or
-fell short, and what changed because of it. "Nothing broke" counts when
-it is true - say how you know.]
+The voice guard installed cleanly. I extended my voice guide with the Upstream section (claims, questions, pings rules), promoted the guide to `~/.claude/voice-guard/voice-guide.md`, and wired the hook into `~/.claude/settings.json`. I also wrote `CLAUDE.local.md` for the pathreview clone, covering conventions from CONTRIBUTING.md, the files the issue touches, and build commands. The one thing that fell short: the original `scope-fits` check in my rubric would have rejected issue #57 for having an "unsettled" approach (no maintainer had explicitly blessed the leading-slash fix). I replaced it with `scope-feasible`, which sends open edges to the difficulty note instead of reject. That change is recorded in `scan-notes.md`.
 
 **Unit 7: [one line on the tool work]**
 
@@ -80,24 +76,14 @@ drafted, what you did with the draft.]
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs in your own words: how you searched, what your scan
-surfaced, what your scout's verdict said, why this issue fits your
-profile, and what you hope to learn. If your scout's verdict on it
-was reject and you chose it anyway, say so here and say why; choosing
-against your own tool silently is what loses points. Close with an
-honest read of the tool itself: where the scout fell short on a real
-wild search and what you changed or would change, or what convinced
-you it held up. **Record the link to your claim comment in this section too.**
-Not claimed yet? Write `claim pending` and today's date where the link goes,
-and add the link the moment your claim lands.]
+[To be filled in next week — unit 6.]
 
 **Toolkit**
 
-- Tool: issue-scout (your scout: your search strategy, your rubric),
-  and how you used it
-- What it produced: [the scan and its verdict on this issue, described]
-- Difficulties: [where it fell short, or "none met" if none did]
-- What changed: [what you patched or would update, or "nothing"]
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
@@ -105,26 +91,26 @@ and add the link the moment your claim lands.]
 
 **Problem Description**
 
-[In your own words, what is broken or missing?]
+[To be filled in.]
 
 **Expected Behavior**
 
-[What should happen?]
+[To be filled in.]
 
 **Current Behavior**
 
-[What actually happens?]
+[To be filled in.]
 
 **Affected Components**
 
-[Which parts of the codebase are involved?]
+[To be filled in.]
 
 **Toolkit**
 
-- Tool:
-- What it produced:
-- Difficulties:
-- What changed:
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
@@ -132,31 +118,22 @@ and add the link the moment your claim lands.]
 
 **Environment Setup**
 
-[What a stranger would need to stand this up: your operating system,
-the relevant versions (language, runtime, package manager, the project
-itself), and how you set the project up. Then the challenges you faced
-and how you solved them, or that none came up.]
+[To be filled in.]
 
 **Steps to Reproduce**
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+[To be filled in.]
 
 **Reproduction Evidence**
 
-- **Commit showing reproduction:** [link to commit in your fork]
-- **Screenshots/logs:** [if applicable]
-- **My findings:** [what you discovered during reproduction; an
-  honest, evidenced cannot-reproduce that led you to re-pick or ask
-  the maintainer belongs here and costs you nothing]
+[To be filled in.]
 
 **Toolkit**
 
-- Tool:
-- What it produced:
-- Difficulties:
-- What changed:
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
@@ -164,93 +141,69 @@ and how you solved them, or that none came up.]
 
 **Analysis**
 
-[Your analysis of the root cause: what is causing the issue, traced
-to the files and functions involved.]
+[To be filled in.]
 
 **Proposed Solution**
 
-[High-level description of your fix approach, and what you are
-deliberately NOT changing.]
+[To be filled in.]
 
 **Implementation Plan**
 
-1. [Modify file X to do Y]
-2. [Add or change Z]
-3. [Update tests]
-
-[Record deviations here as they happen: what changed mid-build and
-why. A recorded deviation is honest work; silent drift is not.]
+[To be filled in.]
 
 **Toolkit**
 
-- Tool:
-- What it produced:
-- Difficulties:
-- What changed:
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
 ## Testing Strategy
 
-[What observable checks prove the fix: your reproduction steps re-run
-against the built change (before and after), and the repo's own test
-suite or checks with the outcome shown. "Tests pass" with nothing
-observable named is not a strategy.]
+[To be filled in.]
 
 **Toolkit**
 
-- Tool:
-- What it produced:
-- Difficulties:
-- What changed:
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
 ## Implementation Notes
 
-[A running log, added to as you work. Date each entry. What you
-built, decisions you made when you made them, wrong turns included.]
-
-**[Date]**
-
-[Entry]
-
-**[Date]**
-
-[Entry]
+[To be filled in as work progresses.]
 
 **Toolkit**
 
-- Tool:
-- What it produced:
-- Difficulties:
-- What changed:
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
 ## Pull Request
 
-**PR Link:** [GitHub PR URL when opened]
+**PR Link:** [not yet opened]
 
-**PR Description:** [what the PR says; much of the content above
-adapts into it]
+**PR Description:** [To be filled in.]
 
 **Maintainer Feedback:**
 
-- [Date]: [feedback received, or "none yet"; silence is a normal
-  state and costs you nothing]
-- [Date]: [how you addressed it]
+[To be filled in.]
 
-**Status:** [Awaiting review / Iterating / Merged / Closed. The
-status is a fact you record, never a grade: the PR is graded as
-opened.]
+**Status:** Not yet opened
 
 **Toolkit**
 
-- Tool:
-- What it produced:
-- Difficulties:
-- What changed:
+- Tool: [which tool did this phase's work, and how you used it]
+- What it produced: [described in a sentence or a short excerpt]
+- Difficulties: [what fought you or fell short, or "none met"]
+- What changed: [the patch, revision, or workaround, what you would update, or "nothing"]
 
 ---
 
@@ -258,25 +211,18 @@ opened.]
 
 **Technical Skills Gained**
 
-[What you learned technically, named concretely.]
+[To be filled in.]
 
 **Challenges Overcome**
 
-[What was hard and how you solved it; point at the real events, the
-Toolkit blocks above are full of them.]
+[To be filled in.]
 
 **What I'd Do Differently Next Time**
 
-[Reflection on your process.]
+[To be filled in.]
 
 ---
 
 ## Resources Used
 
-[What actually helped, not a reading list. List things this story
-already shows you using: the doc you followed to set the environment
-up, the thread that explained the bug, the person who answered you.
-One real entry beats ten plausible ones.]
-
-- [Link to documentation that helped]
-- [Discussion, issue, or post that helped]
+- ArduPilot issue #31588: https://github.com/ArduPilot/ardupilot/issues/31588
